@@ -1,0 +1,27 @@
+/*reset básico para garantir conscistência*/ 
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+body{font-family: sans-serif; padding: 20px;}
+
+/*nesta parte do container tratamos a tag <picture>*/
+.container-imagem{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: pink;
+    padding: 20px;
+}
+
+/*ganratia de respividade da imagens interna*/
+.container-imagem img{
+    max-width: 100%;
+    height: auto;
+}
+
+@media(min-width: 496px){
+    .container-imagem{height: 400px;}
+}
+
+@media(min-width: 642px){
+    .container-imagem{height: 500px;}
+}
